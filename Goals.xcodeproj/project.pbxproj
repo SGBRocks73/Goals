@@ -15,6 +15,8 @@
 		DE2E924D1F73B87B00B14249 /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2E924C1F73B87B00B14249 /* GoalsVC.swift */; };
 		DED8544E1F748A96009A7390 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED8544D1F748A96009A7390 /* GoalCell.swift */; };
 		DED854501F74A285009A7390 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED8544F1F74A285009A7390 /* GoalType.swift */; };
+		DED854521F74B2ED009A7390 /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED854511F74B2ED009A7390 /* CreateGoalVC.swift */; };
+		DED854541F74B5CB009A7390 /* UIVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED854531F74B5CB009A7390 /* UIVCExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		DE2E924C1F73B87B00B14249 /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
 		DED8544D1F748A96009A7390 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 		DED8544F1F74A285009A7390 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
+		DED854511F74B2ED009A7390 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
+		DED854531F74B5CB009A7390 /* UIVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVCExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				DE2E924C1F73B87B00B14249 /* GoalsVC.swift */,
+				DED854511F74B2ED009A7390 /* CreateGoalVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 		DE2E924B1F73B71100B14249 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				DED854531F74B5CB009A7390 /* UIVCExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -178,6 +184,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DED8544E1F748A96009A7390 /* GoalCell.swift in Sources */,
+				DED854521F74B2ED009A7390 /* CreateGoalVC.swift in Sources */,
+				DED854541F74B5CB009A7390 /* UIVCExtension.swift in Sources */,
 				DED854501F74A285009A7390 /* GoalType.swift in Sources */,
 				DE2E924D1F73B87B00B14249 /* GoalsVC.swift in Sources */,
 				DE12FEE11F73B5BF0067FB06 /* AppDelegate.swift in Sources */,
