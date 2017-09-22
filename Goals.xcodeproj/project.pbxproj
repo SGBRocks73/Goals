@@ -17,6 +17,8 @@
 		DED854501F74A285009A7390 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED8544F1F74A285009A7390 /* GoalType.swift */; };
 		DED854521F74B2ED009A7390 /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED854511F74B2ED009A7390 /* CreateGoalVC.swift */; };
 		DED854541F74B5CB009A7390 /* UIVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED854531F74B5CB009A7390 /* UIVCExtension.swift */; };
+		DED854561F74BEA8009A7390 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED854551F74BEA8009A7390 /* UIViewExt.swift */; };
+		DED854581F74C2B7009A7390 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED854571F74C2B7009A7390 /* UIButtonExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		DED8544F1F74A285009A7390 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
 		DED854511F74B2ED009A7390 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
 		DED854531F74B5CB009A7390 /* UIVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVCExtension.swift; sourceTree = "<group>"; };
+		DED854551F74BEA8009A7390 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		DED854571F74C2B7009A7390 /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				DED854531F74B5CB009A7390 /* UIVCExtension.swift */,
+				DED854551F74BEA8009A7390 /* UIViewExt.swift */,
+				DED854571F74C2B7009A7390 /* UIButtonExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -187,8 +193,10 @@
 				DED854521F74B2ED009A7390 /* CreateGoalVC.swift in Sources */,
 				DED854541F74B5CB009A7390 /* UIVCExtension.swift in Sources */,
 				DED854501F74A285009A7390 /* GoalType.swift in Sources */,
+				DED854561F74BEA8009A7390 /* UIViewExt.swift in Sources */,
 				DE2E924D1F73B87B00B14249 /* GoalsVC.swift in Sources */,
 				DE12FEE11F73B5BF0067FB06 /* AppDelegate.swift in Sources */,
+				DED854581F74C2B7009A7390 /* UIButtonExt.swift in Sources */,
 				DE12FEE91F73B5BF0067FB06 /* Goals.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
