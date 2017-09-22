@@ -19,9 +19,9 @@ class GoalCell: UITableViewCell {
         // Initialization code
     }
 
-    func configCell(desritpion: String, type: String, progress: Int) {
+    func configCell(desritpion: String, type: GoalType, progress: Int) {
         self.goalDescritionLabel.text = desritpion
-        self.goalTypeLabel.text = type
+        self.goalTypeLabel.text = type.rawValue
         self.goalProgressLabel.text = String(progress)
     }
 }

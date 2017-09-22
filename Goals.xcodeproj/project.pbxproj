@@ -14,6 +14,7 @@
 		DE12FEEE1F73B5BF0067FB06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE12FEEC1F73B5BF0067FB06 /* LaunchScreen.storyboard */; };
 		DE2E924D1F73B87B00B14249 /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2E924C1F73B87B00B14249 /* GoalsVC.swift */; };
 		DED8544E1F748A96009A7390 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED8544D1F748A96009A7390 /* GoalCell.swift */; };
+		DED854501F74A285009A7390 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED8544F1F74A285009A7390 /* GoalType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DE12FEEF1F73B5BF0067FB06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE2E924C1F73B87B00B14249 /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
 		DED8544D1F748A96009A7390 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
+		DED8544F1F74A285009A7390 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		DE2E924A1F73B70B00B14249 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				DED8544F1F74A285009A7390 /* GoalType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DED8544E1F748A96009A7390 /* GoalCell.swift in Sources */,
+				DED854501F74A285009A7390 /* GoalType.swift in Sources */,
 				DE2E924D1F73B87B00B14249 /* GoalsVC.swift in Sources */,
 				DE12FEE11F73B5BF0067FB06 /* AppDelegate.swift in Sources */,
 				DE12FEE91F73B5BF0067FB06 /* Goals.xcdatamodeld in Sources */,

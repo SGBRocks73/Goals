@@ -15,12 +15,34 @@ class GoalsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        goalTable.delegate = self
+        goalTable.dataSource = self
+        goalTable.isHidden = false 
         // Do any additional setup after loading the view.
     }
     
     @IBAction func addGoalPressed(_ sender: Any) {
         
     }
+    
+}
+
+//tableViews
+extension GoalsVC: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = goalTable.dequeueReusableCell(withIdentifier: "GoalCell") as? GoalCell else { return UITableViewCell()}
+        cell.configCell(desritpion: "Eat healthy food", type: .shortTerm, progress: 3)
+        return cell
+    }
+    
     
 }
