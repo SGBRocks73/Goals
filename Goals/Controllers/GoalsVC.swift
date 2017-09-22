@@ -18,7 +18,9 @@ class GoalsVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
     @IBAction func addGoalPressed(_ sender: Any) {
+        
     }
     
 }
