@@ -13,6 +13,7 @@
 		DE12FEEB1F73B5BF0067FB06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE12FEEA1F73B5BF0067FB06 /* Assets.xcassets */; };
 		DE12FEEE1F73B5BF0067FB06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE12FEEC1F73B5BF0067FB06 /* LaunchScreen.storyboard */; };
 		DE2E924D1F73B87B00B14249 /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2E924C1F73B87B00B14249 /* GoalsVC.swift */; };
+		DE538C841F74D9E7003371C4 /* FinishVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE538C831F74D9E7003371C4 /* FinishVC.swift */; };
 		DED8544E1F748A96009A7390 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED8544D1F748A96009A7390 /* GoalCell.swift */; };
 		DED854501F74A285009A7390 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED8544F1F74A285009A7390 /* GoalType.swift */; };
 		DED854521F74B2ED009A7390 /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED854511F74B2ED009A7390 /* CreateGoalVC.swift */; };
@@ -30,6 +31,7 @@
 		DE12FEED1F73B5BF0067FB06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE12FEEF1F73B5BF0067FB06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE2E924C1F73B87B00B14249 /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
+		DE538C831F74D9E7003371C4 /* FinishVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishVC.swift; sourceTree = "<group>"; };
 		DED8544D1F748A96009A7390 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 		DED8544F1F74A285009A7390 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
 		DED854511F74B2ED009A7390 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			children = (
 				DE2E924C1F73B87B00B14249 /* GoalsVC.swift */,
 				DED854511F74B2ED009A7390 /* CreateGoalVC.swift */,
+				DE538C831F74D9E7003371C4 /* FinishVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DED8544E1F748A96009A7390 /* GoalCell.swift in Sources */,
+				DE538C841F74D9E7003371C4 /* FinishVC.swift in Sources */,
 				DED854521F74B2ED009A7390 /* CreateGoalVC.swift in Sources */,
 				DED854541F74B5CB009A7390 /* UIVCExtension.swift in Sources */,
 				DED854501F74A285009A7390 /* GoalType.swift in Sources */,
