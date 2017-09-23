@@ -30,6 +30,11 @@ class GoalsVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        fetchDataObjects()
+        goalTable.reloadData()
+    }
+    
+    func fetchDataObjects() {
         fetchData { (finished) in
             if finished {
                 if goals.count > 0 {
@@ -40,7 +45,6 @@ class GoalsVC: UIViewController {
                 }
             }
         }
-        goalTable.reloadData()
     }
     
     @IBAction func addGoalPressed(_ sender: Any) {
@@ -67,8 +71,27 @@ extension GoalsVC: UITableViewDelegate, UITableViewDataSource {
         cell.configCell(goal: goal)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        return .none
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "DELETE") { (rowAction, indexPath) in
+            self.removeGoal(indexPath: indexPath)
+            self.fetchDataObjects()
+            self.goalTable.deleteRows(at: [indexPath], with: .automatic)
+        }
+        deleteAction.backgroundColor = #colorLiteral(red: 0.9088812934, green: 0, blue: 0, alpha: 1)
+        return [deleteAction]
+    }
 }
 
+//extensions
 extension GoalsVC {
     
     func fetchData(completion: (_ complete: Bool) -> ()) {
@@ -81,6 +104,18 @@ extension GoalsVC {
             debugPrint(error.localizedDescription)
             completion(false)
         }
+    }
+    
+    func removeGoal(indexPath: IndexPath) {
+        guard let managedContect = appDelegate?.persistentContainer.viewContext else { return }
+        let goal = goals[indexPath.row]
+        managedContect.delete(goal)
+        do {
+           try managedContect.save()
+        } catch {
+            debugPrint(error.localizedDescription)
+        }
+        
     }
     
 }
