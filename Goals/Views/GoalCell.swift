@@ -13,6 +13,7 @@ class GoalCell: UITableViewCell {
     @IBOutlet weak var goalDescritionLabel: UILabel!
     @IBOutlet weak var goalTypeLabel: UILabel!
     @IBOutlet weak var goalProgressLabel: UILabel!
+    @IBOutlet weak var completeView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,6 +24,10 @@ class GoalCell: UITableViewCell {
         self.goalDescritionLabel.text = goal.goalDescrition
         self.goalTypeLabel.text = goal.goalType
         self.goalProgressLabel.text = String(goal.goalProgess)
-
+        if goal.goalProgess == goal.goalCompleteValue {
+            self.completeView.isHidden = false
+        } else {
+            self.completeView.isHidden = true
+        }
     }
 }

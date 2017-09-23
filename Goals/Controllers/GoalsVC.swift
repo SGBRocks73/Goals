@@ -87,12 +87,31 @@ extension GoalsVC: UITableViewDelegate, UITableViewDataSource {
             self.goalTable.deleteRows(at: [indexPath], with: .automatic)
         }
         deleteAction.backgroundColor = #colorLiteral(red: 0.9088812934, green: 0, blue: 0, alpha: 1)
-        return [deleteAction]
+        let addProgressAction = UITableViewRowAction(style: .normal, title: "ADD 1") { (rowAction, indexPath) in
+            self.setGoalProgress(indexPath: indexPath)
+            self.goalTable.reloadRows(at: [indexPath], with: .automatic)
+        }
+        addProgressAction.backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
+        return [deleteAction, addProgressAction]
     }
 }
 
 //extensions
 extension GoalsVC {
+    func setGoalProgress(indexPath: IndexPath) {
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+        let goal = goals[indexPath.row]
+        if goal.goalProgess < goal.goalCompleteValue {
+            goal.goalProgess = goal.goalProgess + 1
+        } else {
+            return
+        }
+        do {
+           try managedContext.save()
+        } catch {
+            debugPrint(error.localizedDescription)
+        }
+    }
     
     func fetchData(completion: (_ complete: Bool) -> ()) {
         guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
